@@ -8,27 +8,65 @@ header {
     background: #2A2D31;
     padding: 20px;
     text-align: center;
-    color: #FFD700;
+    color: #73dbcd;
     font-size: 24px;
     font-weight: bold;
 }
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    align-items: center;
-    gap: 10px;
+/* Search Bar Styling */
+section.container {
+    width: 40%;
+    min-width: 300px;
+    margin: 20px auto;
+    position: relative;
 }
 
-.search-container input {
-    padding: 10px;
-    background: #25282C;
-    color: #EAEAEA;
-    border-radius: 5px;
+label {
+    display: none;
+}
+
+input.search_bar {
     border: none;
-    font-size: 16px;
-    width: 50%;
+    outline: none;
+    width: 75px;
+    border-radius: 100px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #73dbcd;
+    padding: 15px 50px 15px 20px;
+    transition: all .3s cubic-bezier(0, 0, .5, 1.5);
+    box-shadow: 0 3px 10px -2px rgb(135, 190, 241);
+    background: #73dbcd url(https://i.imgur.com/seveWIw.png) no-repeat center center;
+}
+
+input.search_bar:focus {
+    width: 100%;
+    background-position: calc(100% - 20px) center;
+    background-color: #9edbd3;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+    opacity: .7;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+    opacity: .7;
 }
 
 .container {
@@ -57,7 +95,7 @@ header {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #FFD700;
+    color: #ffffff;
 }
 
 .overlay {
@@ -96,7 +134,7 @@ header {
 }
 
 .popup h2 {
-    color: #FFD700;
+    color: #ffffff;
 }
 
 .popup ul {
@@ -117,5 +155,5 @@ footer {
     background: #2A2D31;
     padding: 15px;
     text-align: center;
-    color: #EAEAEA;
+    color: #73dbcd;
 }
