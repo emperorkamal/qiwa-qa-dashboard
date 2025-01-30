@@ -9,12 +9,13 @@
 <body>
     <header>Qiwa QA Services and Resources</header>
 
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search for a service, team lead, or resource..." onkeyup="filterCards()">
-    </div>
+    <section class="container">
+        <label for="search_bar">Search</label>
+        <input class="search_bar" id="search" name="search_bar" type="search" placeholder="Search For services, Team Lead or Team member..." onkeyup="filterCards()">
+    </section>
 
-    <div class="container" id="services-container">
-        <!-- Services will be dynamically added here -->
+    <div class="container" id="servicesContainer">
+        <!-- Dynamically loaded services go here -->
     </div>
 
     <div class="overlay" id="overlay"></div>
@@ -23,7 +24,7 @@
         <div id="popup-content"></div>
     </div>
 
-    <footer>Copyright 2025 - Created by Kamal Aljabari</footer>
+    <footer>© 2025 - Created by Kamal Aljabari</footer>
 
     <script src="script.js"></script>
 </body>
