@@ -193,7 +193,7 @@ input.search_bar {
     width: 75px;
     border-radius: 100px;
     margin: 0 auto;
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: #000000;
     padding: 15px 50px 15px 20px;
     transition: all .3s cubic-bezier(0, 0, .5, 1.5);
