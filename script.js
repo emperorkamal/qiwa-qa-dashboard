@@ -1,3 +1,31 @@
+/* Credit and Thanks:
+Matrix - Particles.js;
+SliderJS - Ettrics;
+Design - Sara Mazal Web;
+Fonts - Google Fonts
+*/
+
+window.onload = function () {
+    Particles.init({
+      selector: ".background"
+    });
+  };
+  const particles = Particles.init({
+    selector: ".background",
+    color: ["#03dac6", "#ff0266", "#000000"],
+    connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          color: ["#faebd7", "#03dac6", "#ff0266"],
+          maxParticles: 43,
+          connectParticles: false
+        }
+      }
+    ]
+  });
+  
 const services = [
     { name: "Absent", lead: "Ismail (I.AbuHamda@takamol.com.sa)", resources: ["Amulya A"] },
     { name: "Check Tool", lead: "Ali (a.bagzal@takamol.com.sa)", resources: ["Lamma Alhazmi"] },

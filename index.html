@@ -7,11 +7,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Qiwa QA Services and Resources</header>
+    <!-- New Header Section -->
+    <section class="nav">
+        <h1>Welcome to the QA Department Dashboard</h1>
+        <h3 class="span loader">
+            <span class="m">Y</span><span class="m">o</span><span class="m">u</span><span class="m">r</span>
+            <span class="m">&nbsp;</span><span class="m">o</span><span class="m">n</span><span class="m">e</span>
+            <span class="m">-</span><span class="m">s</span><span class="m">t</span><span class="m">o</span>
+            <span class="m">p</span><span class="m">&nbsp;</span><span class="m">h</span><span class="m">u</span>
+            <span class="m">b</span><span class="m">&nbsp;</span><span class="m">f</span><span class="m">o</span>
+            <span class="m">r</span><span class="m">&nbsp;</span><span class="m">a</span><span class="m">l</span>
+            <span class="m">l</span><span class="m">&nbsp;</span><span class="m">Q</span><span class="m">A</span>
+            <span class="m">-</span><span class="m">r</span><span class="m">e</span><span class="m">l</span>
+            <span class="m">a</span><span class="m">t</span><span class="m">e</span><span class="m">d</span>
+            <span class="m">&nbsp;</span><span class="m">i</span><span class="m">n</span><span class="m">f</span>
+            <span class="m">o</span><span class="m">r</span><span class="m">m</span><span class="m">a</span>
+            <span class="m">t</span><span class="m">i</span><span class="m">o</span><span class="m">n</span>
+            <span class="m">,</span><span class="m">&nbsp;</span><span class="m">r</span><span class="m">e</span>
+            <span class="m">s</span><span class="m">o</span><span class="m">u</span><span class="m">r</span>
+            <span class="m">c</span><span class="m">e</span><span class="m">s</span><span class="m">,</span>
+            <span class="m">&nbsp;</span><span class="m">a</span><span class="m">n</span><span class="m">d</span>
+            <span class="m">&nbsp;</span><span class="m">t</span><span class="m">e</span><span class="m">a</span>
+            <span class="m">m</span><span class="m">&nbsp;</span><span class="m">d</span><span class="m">e</span>
+            <span class="m">t</span><span class="m">a</span><span class="m">i</span><span class="m">l</span>
+            <span class="m">s</span>
+        </h3>
+        <canvas class="background"></canvas>
+        <div class="mouse">
+            <div class="scroll"></div>
+        </div>
+    </section>
 
+    <!-- Existing Content -->
     <section class="container">
         <label for="search_bar">Search</label>
-        <input class="search_bar" id="search" name="search_bar" type="search" placeholder="Search For services, Team Lead or Team member..." onkeyup="filterCards()">
+        <input class="search_bar" id="search" name="search_bar" type="search" 
+               placeholder="Search For services, Team Lead or Team member..." 
+               onkeyup="filterCards()">
     </section>
 
     <div class="container" id="servicesContainer">
@@ -26,6 +58,8 @@
 
     <footer>© 2025 - Created by Kamal Aljabari</footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
