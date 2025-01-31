@@ -212,7 +212,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 ::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #1e1f26;
     opacity: .7;
 }
 
