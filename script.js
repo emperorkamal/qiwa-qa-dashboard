@@ -124,16 +124,21 @@ function filterCards() {
 }
 
 function showPopup(name, lead, resources) {
-    document.getElementById('popup-content').innerHTML = `
+    const popupContent = document.getElementById('popup-content');
+    popupContent.innerHTML = `
         <h2>${name}</h2>
         <p><strong>Team Lead:</strong> ${lead}</p>
-        <p><strong>Resources:</strong> <ul>${resources.map(r => `<li>${r}</li>`).join("")}</ul></p>
+        <p><strong>Resources:</strong></p>
+        <ul>${resources.map(r => `<li>${r}</li>`).join("")}</ul>
     `;
-    document.getElementById('popup').classList.add('active');
+
+    // Show the overlay and popup
     document.getElementById('overlay').classList.add('active');
+    document.getElementById('popup').classList.add('active');
 }
 
 function closePopup() {
-    document.getElementById('popup').classList.remove('active');
+    // Hide the overlay and popup
     document.getElementById('overlay').classList.remove('active');
+    document.getElementById('popup').classList.remove('active');
 }
