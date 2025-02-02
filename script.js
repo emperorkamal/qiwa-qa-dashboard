@@ -142,3 +142,16 @@ function closePopup() {
     document.getElementById('overlay').classList.remove('active');
     document.getElementById('popup').classList.remove('active');
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mouseIndicator = document.querySelector(".mouse");
+
+  window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+          mouseIndicator.classList.add("hidden"); // Smoothly fade & shrink
+      } else {
+          mouseIndicator.classList.remove("hidden"); // Reappear when at top
+      }
+  });
+});
+
